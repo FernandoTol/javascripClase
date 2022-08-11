@@ -9,9 +9,11 @@ if ( numUno >= numDos ){
     comparacion = true
     console.log(`El numero uno es mayor que numero dos: ${ comparacion }`)
 
-}else{
+}else if( numUno <= numDos ){
 
     comparacion = true
     console.log(`El numero dos es mayor que numero uno: ${ comparacion }`)
 
+}else{
+    console.log(`El numero dos es igual que numero uno: ${ comparacion }`)
 }
