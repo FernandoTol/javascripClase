@@ -21,14 +21,10 @@
 
 
 //1
-
-function suma (){}
-
 let suma = function ( numUno,numDos ) {
     let resultado = numUno + numDos;
     return resultado;
 }
-
 
 console.log( suma( 5,5 ) );
 console.log( `El resultado de la suma es: ${suma( 5,5 )}` );
@@ -43,8 +39,41 @@ console.log( saludo('Fanny') );
 console.log( saludo() );
 
 let saludo2 = ( saludar = "amigo" ) => {
-    reter `Hola ${saludar}`
+    return `Hola ${saludar}`;
 };
 
 console.log( saludo2('Fanny') );
 console.log( saludo2() );
+
+//3
+
+let num = 1
+
+const sumatoria = () => {
+    num = ++num
+    console.log(num)
+}
+
+sumatoria()
+
+//4
+
+const numeros = (num) => {
+
+    let par = num % 2;
+    let resultado;
+
+    if ( par == 0  ){
+        resultado = true
+    } else (
+        resultado = false
+    )
+
+    return resultado
+
+}
+
+console.log(numeros(41))
+
+
+
