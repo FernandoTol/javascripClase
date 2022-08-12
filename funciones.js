@@ -47,33 +47,31 @@ console.log( saludo2() );
 
 //3
 
-let num = 1
+let num = 1;
 
 const sumatoria = () => {
-    num = ++num
-    console.log(num)
+    num = ++num;
+    console.log(num);
 }
 
-sumatoria()
+sumatoria();
 
 //4
 
 const numeros = (num) => {
 
-    let par = num % 2;
     let resultado;
 
-    if ( par == 0  ){
-        resultado = true
-    } else (
-        resultado = false
-    )
+    if ( (num % 2) == 0  ){
+        resultado = true;
+    } else {
+        resultado = false;
+    }
 
-    return resultado
-
+    return resultado;
 }
 
-console.log(numeros(41))
+console.log(numeros(41));
 
 
 
