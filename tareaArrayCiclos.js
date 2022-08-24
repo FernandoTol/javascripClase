@@ -1,11 +1,9 @@
 // *crea una funcion || que reciaba un arreglo || y lo regrese en orden invertido
 
-
 const invertirArray = () => {
     let array = [1, 2, 3, 4, 5]
     let largo = array.length -1
     let base
-    // console.log(largo)
 
     for (let index = 0; index < array.length; index++) {
 
@@ -16,8 +14,8 @@ const invertirArray = () => {
     }
 
 }
-
 invertirArray()
+
 
 // *Crea una funcion que recibe un array de numeros y devuelve el valor mas grande que se encuentre en el arreglo
 
@@ -41,7 +39,7 @@ const mayorValorVeces = (valorX) => {
     const array = [2, 4, 5, 9, 5];
     let cont = 0
 
-    for (let index = 1; index < array.length; index++) {
+    for (let index = 0; index < array.length; index++) {
         const element = array[index];
         if (valorX < element) {
             cont++
@@ -52,7 +50,7 @@ const mayorValorVeces = (valorX) => {
 
 mayorValorVeces(4)
 
-// *Crea una funcin que reciba un array de numeros y regrese la lista de numerospares que se encuentren en el array
+// *Crea una funcin que reciba un array de numeros y regrese la lista de numeros pares que se encuentren en el array
 
 const pares = (arrarNun) => {
     const arrayPares = []
@@ -77,7 +75,7 @@ const repetido = (valorX, elArray) => {
 
     for (let index = 1; index < elArray.length; index++) {
         const element = elArray[index];
-        if (valorX == element) {
+        if (valorX === element) {
             cont++
         }
     }
@@ -106,6 +104,7 @@ const busqueda = 'El pepe'
 let pasarLista = comparacion(arr, busqueda)
 console.log(pasarLista)
 
+
 // *Crear una funcion que parta un arreglo por la mitad y te regrese la segunda mitad
 
 const regresoMitad = (array) => {
@@ -126,6 +125,7 @@ const regresoMitad = (array) => {
 const lista = [4, 5, 7, 5, 8]
 const resultado = regresoMitad(lista)
 console.log(resultado)
+
 
 // *Crea una funcion que reciba 3 array los concatene y reciba un nuevo arreglo
 
@@ -155,6 +155,7 @@ const array3 = [11, 12, 13, 14]
 const resultadoArr = conArray(array1, array2, array3)
 console.log(resultadoArr)
 
+
 // *Crea una funcion que pueda generar 'n' elementos de la serie de fibonacci
 // *donde `n'  esta dado por el argumento de la funcion
 const fibonacci = (num) => {
@@ -171,9 +172,10 @@ const fibonacci = (num) => {
     return arr
 }
 
-let numInicial = 30
+let numInicial = 10
 let srieFibonacci = fibonacci(numInicial)
 console.log(srieFibonacci)
+
 
 // *Crea una funcion que reciba un strin si el string contiene una letra mayuscula retornar false
 
@@ -192,6 +194,7 @@ const mayus = (palabra) => {
 let palabra = 'hola'
 let resultadoMayus = mayus(palabra)
 console.log(resultadoMayus)
+
 
 // *Crea una funcion que reciba un string y retorne true si es un palindromo
 
@@ -214,8 +217,9 @@ const palindromo = (palabra) => {
     return validacion
 }
 
-const palabra2 = 'Eve'
+const palabra2 = 'anita lava la tina'
 console.log(palindromo(palabra2))
+
 
 // *Crea una funcion donde se introdusca un string y se coloquen al inicio de cada palabra mayus
 
@@ -251,6 +255,7 @@ const capLetter = ( palabra ) => {
 const frase = "hola como estas"
 console.log( capLetter( frase ) )
 
+
 // *Crea una funcion que acepte multples palabras y nos regrese la palabra mas larga
 const separar = (frase) => {
     let frasearr = frase.split(' ')
@@ -259,7 +264,6 @@ const separar = (frase) => {
     for (let index = 0; index < frasearr.length; index++) {
         arr.push (frasearr[index].split(''));
     }
-
     let fraseMayor = 0
     for (let index = 0; index < arr.length; index++) {
         const element = arr[index];
@@ -270,9 +274,9 @@ const separar = (frase) => {
     }
     return retorno
 }
-
 let frase1 = 'hola comoooooooooooo asderty estas anticonstitucionalmente';
 console.log(separar(frase1));
+
 
 // *Crear una fun
 
@@ -290,3 +294,6 @@ const charRepetido = (valorX, oracion) => {
 const discurso = "En este die estaremos mejor que never";
 charRepetido("e", discurso)
 
+((hola) => {
+    console.log(hola)
+})('hola')
